@@ -1,0 +1,7 @@
+@page "/student/{id:int}"
+<PageTitle>Student Details | StudentPortalUI</PageTitle>
+<div class="page-heading"><div><span class="eyebrow">STUDENT PROFILE</span><h1>Student details</h1><p>Route parameter demonstration using the student ID.</p></div></div>
+<div class="details-panel"><div class="details-icon">#</div><div><span class="eyebrow">SELECTED STUDENT ID</span><h2>@Id</h2><p>The URL route supplied this integer value to the page through the <code>[Parameter]</code> property.</p><NavLink href="/students" class="button button-primary">← Back to students</NavLink></div></div>
+@code {
+    [Parameter] public int Id { get; set; }
+}
